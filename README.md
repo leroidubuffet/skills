@@ -1,8 +1,10 @@
 # skills
 
-Skills de Claude Code para automatizar tareas repetitivas de revisión y documentación en proyectos Python y Java.
+Skills de Claude Code para automatizar tareas repetitivas de revisión, documentación y desarrollo en proyectos Python y Java.
 
-Cinco skills invocables mediante slash command que cubren: revisión de APIs REST, auditoría de dependencias, generación de descripciones de Pull Request, diagnóstico de salud técnica y generación de tests unitarios. Todos son **solo de invocación explícita** (`disable-model-invocation: true`) — Claude nunca los activa de forma automática.
+Siete skills que cubren: revisión de APIs REST, auditoría de dependencias, generación de descripciones de Pull Request, diagnóstico de salud técnica, generación de tests unitarios, patrones de manejo de errores y sesiones de debugging estructuradas.
+
+Cinco son de **invocación explícita** (slash command) y dos se **activan automáticamente** cuando Claude detecta que el contexto lo requiere.
 
 ---
 
@@ -15,7 +17,7 @@ Copia `.claude/skills/` en tu proyecto o en tu directorio home:
 git clone https://github.com/leroidubuffet/skills /tmp/skills
 cp -r /tmp/skills/.claude/skills/<nombre-del-skill> .claude/skills/
 
-# O instala los cinco de una vez
+# O instala los siete de una vez
 cp -r /tmp/skills/.claude/skills .claude/
 ```
 
@@ -30,4 +32,3 @@ Verifica que están registrados:
 ```
 /skills
 ```
-
